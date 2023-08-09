@@ -31,6 +31,7 @@
 }
 .navbar-toggler {
   border: none !important;
+  box-shadow: none !important;
 }
 .logo {
   height: auto;
@@ -39,6 +40,11 @@
 
 .linkSecond li a {
   gap: 10px;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
 }
 
 #profile {
@@ -467,7 +473,6 @@
   }
   .navBar .nav-link {
     font-size: 13px !important;
-    padding-bottom: 3px;
   }
 }
 @media screen and (max-width: 343px) {
