@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif !important;
+}
+
+:root {
+  --white: #fff;
+  --blk-clr: #0c0c0c;
+  --shadow_clr: 0 1px 5px rgba(0, 0, 0, 0.185);
+  --ylw-clr: rgb(253, 168, 71);
+  --primary-clr: #f2fcff;
+  --fx-clr: #ff5135;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar {
+  background: rgb(255, 255, 255) !important;
+  box-shadow: var(--shadow_clr);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.nav-link {
+  font-weight: 500;
+}
+.navbar-toggler {
+  border: none !important;
+}
+.logo {
+  height: auto;
+  width: 80%;
+}
+
+.linkSecond li a {
+  gap: 10px;
+}
+
+#profile {
+  position: relative;
+}
+
+#profile::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  top: 0;
+  right: -10px;
+  background: var(--blk-clr);
+  opacity: 0.4;
+}
+#profile::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  top: 0;
+  left: -10px;
+  background: var(--blk-clr);
+  opacity: 0.4;
+}
+
+#profile {
+  position: relative;
+}
+.profileDropDown {
+  position: absolute;
+  border-radius: 5px;
+  background: var(--white);
+  border: var(--shadow_clr);
+  top: 50px;
+  left: 0;
+  width: 150px;
+  padding: 0 12px;
+  border: 0.51px solid rgba(0, 0, 0, 0.164);
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 0.2s ease;
+}
+
+#profile.active .profileDropDown {
+  padding: 12px 12px;
+  height: calc(90px + (10px * 2));
+  opacity: 1;
+}
+
+#cart {
+  display: flex;
+  align-items: center;
+}
+#cart .itemBadge {
+  background: var(--ylw-clr);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  width: 28px;
+  color: var(--white);
+  font-size: 13px;
+}
+/* hero section--- */
+
+#hero {
+  background: url(./assets/bg-image.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 570px;
+}
+
+.tagBtn {
+  background: var(--ylw-clr);
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 10px 25px;
+  font-weight: bold;
+}
+.motIve {
+  font-size: 20px;
+  font-weight: 300;
+}
+/* banner section--- */
+
+#banner {
+  padding: 50px;
+}
+
+#work {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  min-height: 50vh;
+  width: 100%;
+  background: var(--primary-clr);
+}
+.work_header {
+  margin-bottom: 40px;
+  color: var(--blk-clr);
+}
+
+.card {
+  background: none !important;
+  border: 0;
+}
+#work .card img {
+  width: 170px;
+}
+#work .card_main_body {
+  position: relative;
+}
+#work .card_main_body::after {
+  content: "";
+  position: absolute;
+  background: rgb(179, 240, 255);
+  top: 20%;
+  width: 30%;
+  height: 2px;
+  right: -40px;
+}
+#work .card_main_body:nth-last-child(1):after {
+  display: none;
+}
+.card-text {
+  color: var(--blk-clr);
+  font-size: 15px;
+}
+
+#offer {
+  background: var(--white);
+  width: 100%;
+}
+
+#offer .card_main_body {
+  padding: 0;
+}
+
+#offer .card img {
+  width: 75px;
+}
+#offer h6 {
+  font-size: 15px;
+}
+
+#offer .card-text {
+  font-size: 12px;
+  color: var(--blk-clr);
+  opacity: 0.8;
+}
+
+#article {
+  background: var(--primary-clr);
+}
+
+#article h1 {
+  font-size: 35px;
+}
+#article #header p {
+  font-size: 20px;
+}
+#article .card {
+  border: 0.51px solid rgba(0, 0, 0, 0.164);
+  background: var(--white);
+}
+#article img {
+  height: auto;
+}
+
+#article .news_time {
+  opacity: 0.5;
+  font-weight: 500;
+  margin: 5px 0;
+  font-size: 12px;
+}
+#article .card-body p {
+  font-size: 14px;
+  color: var(--blk-clr);
+}
+
+#article .read_more {
+  color: var(--fx-clr);
+  font-size: 13px;
+}
+
+#referral {
+  background: var(--fx-clr);
+}
+#referral .work_header {
+  font-size: 35px;
+  font-weight: normal;
+}
+
+#referral p {
+  font-weight: 300;
+}
+
+/* footer section--- */
+
+#footer {
+  background: #1f2b34;
+  color: #5c9e9e;
+}
+#footer .footer_header {
+  font-size: 17px;
+  font-weight: bold;
+  position: relative;
+}
+
+.footer_header::after {
+  position: absolute;
+  content: "";
+  bottom: -25px;
+  left: 0;
+  width: 35px;
+  height: 2px;
+  background: #5c9e9e;
+}
+
+#footer .nav-link {
+  color: #5c9e9e !important;
+  font-size: 15px;
+}
+
+#footer_copyright {
+  font-size: 13px;
+}
+#footer_copyright img {
+  width: 150px;
+  height: 100%;
+}
+
+/* media queries--- */
+
+@media screen and (max-width: 1092px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .navbar-brand {
+    margin-right: 0 !important;
+    width: 250px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .profileDropDown {
+    position: static;
+    width: 100%;
+  }
+  #profile::after,
+  #profile::before {
+    display: none;
+  }
+  #work .container {
+    max-width: 828px;
+  }
+  #work .card img {
+    width: 117px;
+  }
+  #work .card_main_body::after {
+    top: 15%;
+    right: -30px;
+  }
+  #work .card-title {
+    font-size: 0.95rem;
+  }
+  #work .card-text {
+    font-size: 12px;
+  }
+  #footer .container {
+    max-width: 947px;
+  }
+  #footer .footer_header {
+    font-size: 14px;
+  }
+  #footer .nav-link {
+    color: #5c9e9e !important;
+    font-size: 12px;
+  }
+
+  #footer .nav-item a img {
+    width: 15px;
+  }
+
+  #social .nav-link img {
+    width: 23px !important;
+  }
+  #profile.active .profileDropDown {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #hero {
+    height: 409px;
+  }
+  #hero h1 {
+    font-size: 28px;
+  }
+  .motIve {
+    font-size: 16px;
+  }
+  #banner {
+    padding: 25px;
+  }
+
+  #banner p {
+    font-size: 13px;
+  }
+  #work .card_main_body::after {
+    display: none;
+  }
+
+  .footer_header::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    background: #5c9e9e;
+  }
+  #social .nav-link img {
+    width: 30px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navBar .nav-link {
+    font-size: 14px !important;
+    padding-bottom: 5px;
+  }
+
+  .navBar .nav-link img {
+    width: 17px;
+    height: auto;
+  }
+  #cart {
+    gap: 15px;
+  }
+  #cart .itemBadge {
+    height: 22px;
+    width: 22px;
+    font-size: 10px;
+  }
+
+  #hero {
+    height: 257px;
+  }
+  #hero h1 {
+    font-size: 25px;
+  }
+  .motIve {
+    font-size: 12px;
+  }
+  .tagBtn {
+    font-size: 9px;
+    padding: 6px 13px;
+  }
+  #banner {
+    padding: 20px 18px;
+  }
+  #offer .card img {
+    width: 94px;
+  }
+  #referral p {
+    font-size: 14px;
+  }
+  #referral .tagBtn {
+    font-size: 13px;
+    padding: 6px 13px;
+  }
+  #footer_copyright {
+    font-size: 10px;
+  }
+  #footer_copyright img {
+    width: 123px;
+  }
+  #profile .nav-link {
+    padding: 0;
+  }
+  .dropdown-item {
+    font-size: 14px;
+  }
+  #profile.active .profileDropDown {
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 420px) {
+  #footer_copyright {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 10px;
+  }
+  #footer_copyright img {
+    width: 204px;
+  }
+  #footer_copyright p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 384px) {
+  #hero h1 {
+    font-size: 23px;
+  }
+  #banner p {
+    font-size: 10px;
+  }
+  #banner .container {
+    padding: 0;
+  }
+  #footer_copyright img {
+    width: 100px;
+  }
+  #footer_copyright {
+    font-size: 8px;
+  }
+  .navbar-toggler-icon {
+    width: 1.3em;
+    height: 1.3em;
+  }
+  .navBar .nav-link {
+    font-size: 13px !important;
+    padding-bottom: 3px;
+  }
+}
+@media screen and (max-width: 343px) {
+  .navbar-brand {
+    margin-right: 0 !important;
+    width: 180px !important;
+  }
+  .dropdown-item {
+    font-size: 12px !important;
+  }
+  #profile.active .profileDropDown {
+    padding: 12px 12px;
+    height: calc(90px + (4px * 2));
+    opacity: 1;
+  }
+  #footer_copyright {
+    font-size: 7px;
+  }
+  #footer_copyright img {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 317px) {
+  #hero h1 {
+    font-size: 20px;
+  }
+  .motIve {
+    font-size: 10px;
+  }
+
+  .navbar-toggler {
+    padding: 0 !important;
+    font-size: 20px;
+  }
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
+  .navBar .nav-link {
+    font-size: 11px !important;
+  }
+  .navBar .nav-link img {
+    width: 12px;
+  }
+  #cart {
+    gap: 10px;
+  }
+
+  #profile.active .profileDropDown {
+    height: calc(90px + (2px * 2));
+  }
+}
+
+@media screen and (max-width: 288px) {
+  #article .card-title {
+    font-size: 0.9rem;
+  }
+  #article .card-body p {
+    font-size: 10px;
+    color: var(--blk-clr);
+  }
+}
