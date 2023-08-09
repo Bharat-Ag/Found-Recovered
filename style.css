@@ -254,7 +254,6 @@ button {
 }
 
 /* footer section--- */
-
 #footer {
   background: #1f2b34;
   color: #5c9e9e;
@@ -287,7 +286,6 @@ button {
   width: 150px;
   height: 100%;
 }
-
 /* media queries--- */
 
 @media screen and (max-width: 1092px) {
