@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Found Recovered</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- //navbar--------->
+
+      <div class="navBar">
+        <nav class="navbar navbar-expand-lg py-md-3 px-2">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="./assets/logo.png" alt="logo" class="logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav ms-auto mb-2 mb-lg-0 me-md-4 text-uppercase"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">activate tag</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    more
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul
+                class="navbar-nav mb-2 mb-lg-0 text-uppercase linkSecond position-relative"
+              >
+                <li class="nav-item me-md-4" id="profile">
+                  <a class="nav-link" style="cursor: pointer">
+                    <img src="./assets/account.png" alt="" />
+                    <span
+                      >my account
+                      <span class="ms-1"
+                        ><img src="./assets/arrow.png" alt=""
+                      /></span>
+                    </span>
+                  </a>
+                  <ul
+                    class="profileDropDown list-unstyled text-start"
+                    id="profileDropDown"
+                  >
+                    <li class="mb-2">
+                      <a class="dropdown-item" href="#">Setting</a>
+                    </li>
+                    <li class="mb-2">
+                      <a class="dropdown-item" href="#">logout</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">report bug</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item" id="cart">
+                  <a class="nav-link" href="#">
+                    <img src="./assets/cart.png" alt="" />
+                    cart
+                  </a>
+                  <div class="itemBadge">10</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- //hero section--------->
+
+      <div
+        class="hero d-flex flex-column justify-content-center gx-0"
+        id="hero"
+      >
+        <div class="container-fluid gx-0 px-md-5 px-4">
+          <div class="row gx-0">
+            <div class="col m-0">
+              <h1 class="m-0 p-0 col-md-12 col-sm-6 col-7">
+                Never lose your best friend
+              </h1>
+              <p class="col-xl-4 col-lg-5 col-6 motIve p-0 my-3">
+                Our innovative solution will help you to reunite with your pet
+                if lost.
+              </p>
+            </div>
+          </div>
+          <div class="row mt-1">
+            <div class="col-md-3">
+              <button class="btn tagBtn text-uppercase text-white">
+                pick a tag now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- //banner section--------->
+
+      <div class="container-fluid" id="banner">
+        <div class="container gx-0">
+          <div class="row">
+            <div class="col text-center">
+              <p class="mb-0">
+                Lorem ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- //working section--------->
+      <div class="container-fluid py-5" id="work">
+        <div class="row">
+          <div class="col-12 text-center mx-auto">
+            <h1 class="work_header">How it works?</h1>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-8 col-12 mx-auto card_main_body px-2">
+              <div class="card mb-md-0 mb-3">
+                <img
+                  src="./assets/how_it_works_1.png"
+                  class="card-img-top mx-auto mx-auto"
+                  alt="how_it_works_1.png"
+                />
+                <div class="card-body text-center text-center">
+                  <h5 class="card-title">
+                    Purchase tag and create pet profile
+                  </h5>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-8 col-12 mx-auto card_main_body px-2">
+              <div class="card mb-md-0 mb-3">
+                <img
+                  src="./assets/how_it_works_2.png"
+                  class="card-img-top mx-auto"
+                  alt="how_it_works_2.png"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Is your pet gone missing?</h5>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-8 col-12 mx-auto card_main_body px-2">
+              <div class="card mb-md-0 mb-3">
+                <img
+                  src="./assets/how_it_works_3.png"
+                  class="card-img-top mx-auto"
+                  alt="how_it_works_3.png"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Finder will can QR to get info</h5>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-8 col-12 mx-auto card_main_body px-2">
+              <div class="card">
+                <img
+                  src="./assets/how_it_works_4.png"
+                  class="card-img-top mx-auto"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Reunite with your beloved friend</h5>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- //offer section--------->
+      <div class="container-fluid py-5" id="offer">
+        <div class="row">
+          <div class="col-12 text-center mx-auto">
+            <h1 class="work_header">What we offer</h1>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-12 card_main_body">
+              <div class="card mb-md-0 mb-3">
+                <img
+                  src="./assets/tag.png"
+                  class="card-img-top mx-auto mx-auto"
+                  alt="tag.png"
+                />
+                <div class="card-body text-center text-center">
+                  <h6 class="card-title">Affordable unique tags</h6>
+                  <p class="card-text">Can get tags in affordable proces</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 card_main_body">
+              <div class="card mb-md-0 mb-3">
+                <img
+                  src="./assets/pet.png"
+                  class="card-img-top mx-auto"
+                  alt="pet_png"
+                />
+                <div class="card-body text-center">
+                  <h6 class="card-title">Create multiple pet profile</h6>
+                  <p class="card-text">
+                    create multiple pet profile from your single profile
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 card_main_body">
+              <div class="card mb-md-0 mb-3">
+                <img
+                  src="./assets/link.png"
+                  class="card-img-top mx-auto"
+                  alt="how_it_works_3.png"
+                />
+                <div class="card-body text-center">
+                  <h6 class="card-title">Effortless tag linking with pets</h6>
+                  <p class="card-text">Easy to link tag with your pet</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 card_main_body">
+              <div class="card">
+                <img
+                  src="./assets/how_it_works_4.png"
+                  class="card-img-top mx-auto"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h6 class="card-title">Up to date contact information</h6>
+                  <p class="card-text">Update your contact info 24/7</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- //latest news/article section--------->
+      <div class="container-fluid py-5" id="article">
+        <div class="row">
+          <div class="col-12 text-center mx-auto mb-5" id="header">
+            <h1 class="work_header m-0">Latest Artciles</h1>
+            <p class="work_para">Our latest Blog Articles to read</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-12 card_main_body">
+              <div class="card mb-md-0 mb-4">
+                <img
+                  src="https://www.vuelio.com/uk/wp-content/uploads/2019/02/Breaking-News.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body p-0 py-2 px-1">
+                  <div class="col-12 d-flex justify-content-between pe-2">
+                    <small class="news_time">9th Aug, 23</small>
+                    <small class="news_time">Technology</small>
+                  </div>
+                  <h6 class="card-title">
+                    Hello this is my first blog articles and this one is latest
+                    one
+                  </h6>
+                  <p class="card-text">
+                    Blog short description will go here and with max length Blog
+                    short description will go here and text continued
+                  </p>
+                  <div class="col-12 text-capitalize text-center d-block">
+                    <a href="#" class="text-decoration-none read_more"
+                      >read more ></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 card_main_body">
+              <div class="card mb-md-0 mb-4">
+                <img
+                  src="https://www.vuelio.com/uk/wp-content/uploads/2019/02/Breaking-News.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body p-0 py-2 px-1">
+                  <div class="col-12 d-flex justify-content-between pe-2">
+                    <small class="news_time">9th Aug, 23</small>
+                    <small class="news_time">Technology</small>
+                  </div>
+                  <h6 class="card-title">
+                    Hello this is my first blog articles and this one is latest
+                    one
+                  </h6>
+                  <p class="card-text">
+                    Blog short description will go here and with max length Blog
+                    short description will go here and text continued
+                  </p>
+                  <div class="col-12 text-capitalize text-center d-block">
+                    <a href="#" class="text-decoration-none read_more"
+                      >read more ></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 card_main_body">
+              <div class="card">
+                <img
+                  src="https://www.vuelio.com/uk/wp-content/uploads/2019/02/Breaking-News.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body p-0 py-2 px-1">
+                  <div class="col-12 d-flex justify-content-between pe-2">
+                    <small class="news_time">9th Aug, 23</small>
+                    <small class="news_time">Technology</small>
+                  </div>
+                  <h6 class="card-title">
+                    Hello this is my first blog articles and this one is latest
+                    one
+                  </h6>
+                  <p class="card-text">
+                    Blog short description will go here and with max length Blog
+                    short description will go here and text continued
+                  </p>
+                  <div class="col-12 text-capitalize text-center d-block">
+                    <a href="#" class="text-decoration-none read_more"
+                      >read more ></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- //referral  btn section--------->
+
+      <div class="container-fluid py-5" id="referral">
+        <div class="row">
+          <div class="col-sm-6 col-11 text-center mx-auto text-white">
+            <h1 class="work_header text-white m-0">
+              Grab a tag for your friend!
+            </h1>
+            <p class="my-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
+            </p>
+            <button class="btn tagBtn text-white">PICK A TAG NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- //footer section--------->
+
+      <div class="container-fluid" id="footer">
+        <div class="container">
+          <footer class="pt-5 pb-2">
+            <div class="row gy-md-0 gy-sm-5 gy-2">
+              <div class="col-sm-6 col-12 col-md-3 mb-3">
+                <h5 class="footer_header text-uppercase mb-5">about</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted"
+                      >What is QR code</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted"
+                      >Privacy Policy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-12 col-md-3 mb-3 px-2">
+                <h5 class="footer_header text-uppercase mb-5">GET STARTED</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">Order tags </a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted"
+                      >Create account
+                    </a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">FAQs </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-12 col-md-3 mb-3">
+                <h5 class="footer_header text-uppercase mb-5">contact</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a
+                      href="#"
+                      class="nav-link p-0 text-muted d-flex align-items-center gap-3"
+                    >
+                      <img src="./assets/mail.png" alt="" />
+                      Support@found_recovered.com
+                    </a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="#"
+                      class="nav-link p-0 text-muted d-flex align-items-center gap-3"
+                    >
+                      <img src="./assets/call.png" alt="" />
+                      +91 123 456 789
+                    </a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="#"
+                      class="nav-link p-0 text-muted d-flex align-items-start gap-3"
+                    >
+                      <img src="./assets/location.png" alt="" />
+                      <p>
+                        Address line 1, <br />Address line 2, <br />State, City,
+                        Country - pincode
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-12 col-md-3 mb-3 px-md-5" id="social">
+                <h5 class="footer_header text-uppercase mb-5">social</h5>
+                <ul class="nav gap-3">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">
+                      <img src="./assets/fb.png" alt="fb" />
+                    </a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">
+                      <img src="./assets/tweet.png" alt="tweet" />
+                    </a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">
+                      <img src="./assets/pinterest.png" alt="pinterest" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr />
+            <div
+              id="footer_copyright"
+              class="d-flex align-items-center flex-sm-row justify-content-between py-2 my-2"
+            >
+              <img src="./assets/footer-logo.png" alt="footer_logo" />
+              <p class="m-0 p-0">
+                © 2016 Found & Recovered. All Rights Reserved.
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
